@@ -1,0 +1,1 @@
+Sitemap: https://mlederbauer.github.io/bytesizedchem/sitemap.xml
