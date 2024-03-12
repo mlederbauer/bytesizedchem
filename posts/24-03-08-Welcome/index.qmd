@@ -1,0 +1,22 @@
+---
+title: "Welcome To My Blog!"
+date: "2024-03-08"
+categories: [studies]
+---
+
+:::{.callout-warning}
+
+This article is a WIP.
+
+:::
+
+![](thumbnail.jpg)
+
+Finally! Welcome! It has been a hot minute.
+This is a blog about a digital chemistry nerd. I am passionate about the field and am continuously learning.
+
+If you have any ideas or content that you would like to have featured or discussed here, please don't hesitate to reach out on [Twitter](twitter.com/maglederb), [LinkedIn](linkedin.com/in/magdalena-lederbauer) or [email](mlederbauer@ethz.ch). Any feedback or redistribution is highly appreciated!
+
+In a bit, I will launch a feature that enables you to subscribe to the blog.
+
+Cheers,
