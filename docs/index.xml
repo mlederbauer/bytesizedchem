@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>bytesizedchem</title>
+<link>https://bytesizedchem.com/</link>
+<atom:link href="https://bytesizedchem.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>A Digital Chemistry Atlas</description>
+<generator>quarto-1.4.550</generator>
+<lastBuildDate>Thu, 07 Mar 2024 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome To My Blog!</title>
+  <dc:creator>Magdalena Lederbauer</dc:creator>
+  <link>https://bytesizedchem.com/posts/24-03-08-Welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This article is a WIP.</p>
+</div>
+</div>
+<p><img src="https://bytesizedchem.com/posts/24-03-08-Welcome/thumbnail.jpg" class="img-fluid"></p>
+<p>Finally! Welcome! It has been a hot minute. This is a blog about a digital chemistry nerd. I am passionate about the field and am continuously learning.</p>
+<p>If you have any ideas or content that you would like to have featured or discussed here, please don’t hesitate to reach out on <a href="twitter.com/maglederb">Twitter</a>, <a href="linkedin.com/in/magdalena-lederbauer">LinkedIn</a> or <a href="mlederbauer@ethz.ch">email</a>. Any feedback or redistribution is highly appreciated!</p>
+<p>In a bit, I will launch a feature that enables you to subscribe to the blog.</p>
+<p>Cheers,</p>
+
+
+
+ ]]></description>
+  <category>studies</category>
+  <guid>https://bytesizedchem.com/posts/24-03-08-Welcome/</guid>
+  <pubDate>Thu, 07 Mar 2024 23:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

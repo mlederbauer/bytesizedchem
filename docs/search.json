@@ -7,24 +7,59 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "drafts/xx_xx_xx_ideal-synthesis/index.html",
+    "href": "drafts/xx_xx_xx_ideal-synthesis/index.html",
+    "title": "What IS even a good chemical process?",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "The ideal chemical process is that which a one-armed operator can perform by pouring the reactants into a bathtub and collecting pure product from the drain hole."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
+    "objectID": "drafts/xx_xx_xx_how-to-code/index.html",
+    "href": "drafts/xx_xx_xx_how-to-code/index.html",
+    "title": "I Would Love To Start Coding As A Chemist. How?",
+    "section": "",
+    "text": "I’ve been approached by …\nAt my home university, we were confronted with programming from an early academic age one.\nHow To Learn To Code?\nLearning Python\nLearning the Programming Interface\nLearning Machine Learning (Machine Learning Machine Learning… You’re A Learning Machine)\n\nKaggle\nCodecademny (watch out for Sales promos around New Years, Black Friday and the beginning of the School Year! Gamifying the Experience like a gentle Duolingo)\nintrotodeeplearning\nGitHub Copilot, ChatGPT: Handle with care. Not only do they love to hallucinate (train-test-leakage, hello!), they are also depreceated and sometimes don’t contain the newest/most efficient versions. Super helpful to get unstuck on a problem, but not the usable solution. Also a great teacher, by the way. Good alternatives to ChatGPT is perplecity.ai.\nHands-On-Projects! Just ASK! Think of interesting problems. I wanted to build my own budgeting program (and failed miserably, by the way)"
+  },
+  {
+    "objectID": "posts/24-03-11-DSPy/index.html",
+    "href": "posts/24-03-11-DSPy/index.html",
+    "title": "DSPy – A Powerful Framework",
+    "section": "",
+    "text": "This is a post with executable code.\nDISCLAIMER: This post might be outdated by the time of reading this. I advise you to constantly check!\n\n\n\n\n\n\nTip\n\n\n\ntestetstst(Khattab et al. 2023)\n\n\n\n# testetsts\n\n\n\nKhattab, Omar, Arnav Singhvi, Paridhi Maheshwari, Zhiyuan Zhang, Keshav Santhanam, Sri Vardhamanan, Saiful Haq, et al. 2023. “DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.” arXiv. https://doi.org/10.48550/arXiv.2310.03714."
+  },
+  {
+    "objectID": "posts/24-03-08-Welcome/index.html",
+    "href": "posts/24-03-08-Welcome/index.html",
+    "title": "Welcome To My Blog!",
+    "section": "",
+    "text": "Warning\n\n\n\nThis article is a WIP.\n\n\n\nFinally! Welcome! It has been a hot minute. This is a blog about a digital chemistry nerd. I am passionate about the field and am continuously learning.\nIf you have any ideas or content that you would like to have featured or discussed here, please don’t hesitate to reach out on Twitter, LinkedIn or email. Any feedback or redistribution is highly appreciated!\nIn a bit, I will launch a feature that enables you to subscribe to the blog.\nCheers,"
+  },
+  {
+    "objectID": "posts/24-03-08-Welcome/index.html#some-more-stuff",
+    "href": "posts/24-03-08-Welcome/index.html#some-more-stuff",
+    "title": "Welcome To My Blog!",
+    "section": "Some More Stuff",
+    "text": "Some More Stuff"
+  },
+  {
+    "objectID": "drafts/24_02_xx_design-principles/index.html",
+    "href": "drafts/24_02_xx_design-principles/index.html",
     "title": "Post With Code",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "inspiration: Heads First Design Principles (by the way a ressource many students have access too – se previous post on learning to code)\nMost important points\nStill – I highly encourage you to give the book a read."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "bytesizedchem",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 11, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 8, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To My Blog!\n\n\n\n\n\n\nstudies\n\n\n\n\n\n\n\n\n\nMar 8, 2024\n\n\nMagdalena Lederbauer\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/24-03-30-Map-of-Dig-Chem/index.html",
+    "href": "posts/24-03-30-Map-of-Dig-Chem/index.html",
+    "title": "Making Of: Map of Digital Chemistry",
+    "section": "",
+    "text": "I have the honour of presenting some of my work and research interests in the “Meet the Talent” event at ETH Zurich in April! This is an event organized by the ETH Foundation to showcase some of the work that fellow ESOP scholars haver done or are interested in. I thought that this would be a fantastic opportunity to sketch out a little “map of digital chemistry”. So, let’s do it!\nThis post is about the process of obtaining the “Map of Digital Chemistry”. For the final post/illustration and poster see a later post. This post will be continuously updated – also, please feel free to send me any feedback or suggestions via e-mail or the social media credentials above.\nDigital chemistr"
   }
 ]
