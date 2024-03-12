@@ -4,17 +4,27 @@ project:
 
 website:
   title: "bytesizedchem"
+  site-url: https://bytesizedchem.com
+  description: "A Digital Chemistry Atlas"
+  favicon: assets/favicon.png
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/mlederbauer
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/maglederb
+      - icon: linkedin
+        href: https://www.linkedin.com/in/magdalena-lederbauer/
+      - icon: rss
+        href: index.xml
+    logo: assets/favicon.png
+  margin-header: subscribe.html
 format:
   html:
     theme: cosmo
     css: styles.css
 
-
+execute:
+  freeze: auto
 
