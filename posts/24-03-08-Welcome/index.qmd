@@ -1,22 +1,39 @@
 ---
-title: "Welcome To My Blog!"
-date: "2024-03-08"
-categories: [studies]
+title: "Welcome To BSC!"
+date: "2024-05-23"
+categories: []
 ---
 
 :::{.callout-warning}
 
-This article is a WIP.
+This blog is a continuous work in progress. Subscribe [here]() to get updates.
 
 :::
 
-![](thumbnail.jpg)
+![](thumbnail.png)
 
-Finally! Welcome! It has been a hot minute.
-This is a blog about a digital chemistry nerd. I am passionate about the field and am continuously learning.
 
-If you have any ideas or content that you would like to have featured or discussed here, please don't hesitate to reach out on [Twitter](twitter.com/maglederb), [LinkedIn](linkedin.com/in/magdalena-lederbauer) or [email](mlederbauer@ethz.ch). Any feedback or redistribution is highly appreciated!
+# Welcome to BytzeSizedChem!
+Finally – It has been a hot minute.
 
-In a bit, I will launch a feature that enables you to subscribe to the blog.
+Hello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important for this blog’s acronym). I started BytzeSizedChem (BSC) with the goal of:
 
-Cheers,
+* Practicing a habit of consistent writing (it’s a muscle!),
+* Transitioning from “student” to “researcher” while remaining a life-long learner,
+* Building an atlas and community for digital chemists.
+
+I’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.
+
+### Some upcoming posts include:
+
+* Coding Essentials for New Digital Chemists
+* Making of a Scientific Poster
+* AI is IN: Chemical Education with Digital Tools
+* ChatGPT goes Chemistry: Build your own Large Language Model Agent
+* Networking for Nerds
+
+This website contains detailed content, context, and code snippets. For short summaries and – most importantly – for staying updated about upcoming posts, check out my [Substacl](). You will be notified by updates right here, making it super easy to stay informed by subscribing.
+
+If you have any ideas or content that you would like to have featured or discussed here, please don't hesitate to reach out on [X](twitter.com/maglederb), [LinkedIn](linkedin.com/in/magdalena-lederbauer) or [email](mlederbauer@ethz.ch). Any feedback or redistribution is highly appreciated!
+
+Very much looking forward to this journey with you! Ad astra 🚀✨
