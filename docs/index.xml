@@ -10,42 +10,61 @@
 <atom:link href="https://bytesizedchem.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A Digital Chemistry Atlas</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Thu, 07 Mar 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 May 2024 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>Welcome To My Blog!</title>
+  <title>Welcome To BSC!</title>
   <dc:creator>Magdalena Lederbauer</dc:creator>
-  <link>https://bytesizedchem.com/posts/24-03-08-Welcome/</link>
+  <link>https://bytesizedchem.com/posts/24-05-23_Welcome/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This article is a WIP.</p>
+<p>This blog is a continuous work in progress. Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to get updates.</p>
 </div>
 </div>
-<p><img src="https://bytesizedchem.com/posts/24-03-08-Welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>Finally! Welcome! It has been a hot minute. This is a blog about a digital chemistry nerd. I am passionate about the field and am continuously learning.</p>
-<p>If you have any ideas or content that you would like to have featured or discussed here, please don’t hesitate to reach out on <a href="twitter.com/maglederb">Twitter</a>, <a href="linkedin.com/in/magdalena-lederbauer">LinkedIn</a> or <a href="mlederbauer@ethz.ch">email</a>. Any feedback or redistribution is highly appreciated!</p>
-<p>In a bit, I will launch a feature that enables you to subscribe to the blog.</p>
-<p>Cheers,</p>
+<p><img src="https://bytesizedchem.com/posts/24-05-23_Welcome/thumbnail.png" class="img-fluid"> <em>My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.</em></p>
+<section id="welcome-to-bytzesizedchem" class="level1">
+<h1>Welcome to BytzeSizedChem!</h1>
+<p>Finally – It has been a hot minute.</p>
+<p>Hello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important for this blog’s acronym). I started BytzeSizedChem (BSC) with the goal of:</p>
+<ul>
+<li>Practicing a habit of consistent writing (it’s a muscle!),</li>
+<li>Transitioning from “student” to “researcher” while remaining a life-long learner,</li>
+<li>Building an atlas and community for digital chemists.</li>
+</ul>
+<p>I’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.</p>
+<section id="some-upcoming-posts-include" class="level3">
+<h3 class="anchored" data-anchor-id="some-upcoming-posts-include">Some upcoming posts include:</h3>
+<ul>
+<li>Coding Essentials for New Digital Chemists</li>
+<li>Making of a Scientific Poster</li>
+<li>AI is IN: Chemical Education with Digital Tools</li>
+<li>ChatGPT goes Chemistry: Build your own Large Language Model Agent</li>
+<li>Networking for Nerds</li>
+</ul>
+<p>This website contains detailed content, context, and code snippets. For short summaries and – most importantly – for staying updated about upcoming posts, check out my <a href="https://bytesizedchem.substack.com/subscribe">Substack</a>. You will be notified by updates right here, making it super easy to stay informed by subscribing.</p>
+<p>If you have any ideas or content that you would like to have featured or discussed here, please don’t hesitate to reach out on <a href="twitter.com/maglederb">X</a>, <a href="linkedin.com/in/magdalena-lederbauer">LinkedIn</a> or <a href="mlederbauer@ethz.ch">email</a>. Any feedback or redistribution is highly appreciated!</p>
+<p>Very much looking forward to this journey with you! Ad astra 🚀✨</p>
 
 
+</section>
+</section>
 
  ]]></description>
-  <category>studies</category>
-  <guid>https://bytesizedchem.com/posts/24-03-08-Welcome/</guid>
-  <pubDate>Thu, 07 Mar 2024 23:00:00 GMT</pubDate>
+  <guid>https://bytesizedchem.com/posts/24-05-23_Welcome/</guid>
+  <pubDate>Wed, 22 May 2024 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

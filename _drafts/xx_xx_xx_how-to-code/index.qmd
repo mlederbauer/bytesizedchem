@@ -1,0 +1,30 @@
+---
+title: "I Would Love To Start Coding As A Chemist. How?"
+author: "mlederbauer"
+date: "2024-02-19"
+categories: [news]
+---
+
+![](thumbnail.jpg)
+
+I've been approached by ...
+
+At my home university, we were confronted with programming from an early academic age one.
+
+How To Learn To Code?
+
+Learning Python
+
+Learning the Programming Interface
+
+Learning Machine Learning (Machine Learning Machine Learning... You're A Learning Machine)
+
+- Kaggle
+- Codecademny (watch out for Sales promos around New Years, Black Friday and the beginning of the School Year! Gamifying the Experience like a gentle Duolingo)
+- introtodeeplearning
+
+- GitHub Copilot, ChatGPT: Handle with care. Not only do they love to hallucinate (train-test-leakage, hello!), they are also depreceated and sometimes don't contain the newest/most efficient versions. Super helpful to get unstuck on a problem, but not the usable solution. Also a great teacher, by the way. Good alternatives to ChatGPT is perplecity.ai.
+
+- Hands-On-Projects!
+Just ASK! Think of interesting problems.
+I wanted to build my own budgeting program (and failed miserably, by the way)

@@ -19,7 +19,7 @@ website:
       - icon: rss
         href: index.xml
     logo: assets/favicon.png
-  margin-header: subscribe.html
+  # margin-header: subscribe.html
 format:
   html:
     theme: cosmo
@@ -27,4 +27,3 @@ format:
 
 execute:
   freeze: auto
-

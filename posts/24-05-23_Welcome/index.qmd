@@ -4,13 +4,14 @@ date: "2024-05-23"
 categories: []
 ---
 
-:::{.callout-warning}
+:::{.callout-tip}
 
 This blog is a continuous work in progress. Subscribe [here](https://bytesizedchem.substack.com/subscribe) to get updates.
 
 :::
 
 ![](thumbnail.png)
+*My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.*
 
 
 # Welcome to BytzeSizedChem!

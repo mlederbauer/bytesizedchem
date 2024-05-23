@@ -1,0 +1,42 @@
+---
+title: "Everything Gets A Package"
+subtitle: "My favorite coding tools as a self-taught digital chemist"
+date: "2024-05-13"
+categories: [coding]
+image: "image.jpg"
+jupyter: python3
+bibliography: references.bib
+
+---
+
+# Intro Story
+In school, I never touched more than necessary on a computer.
+
+# How to set up a coding project
+- 
+- 
+-
+
+inspiration: Heads First Design Principles (by the way a ressource many students have access too -- se previous post on learning to code)
+
+Most important points
+
+# Coding etiquette
+
+
+# So what about Open Source?
+
+# How to get started
+
+:::{.callout-tip}
+
+testetstst[@khattabDSPyCompilingDeclarative2023]
+
+:::
+
+```{python}
+# testetsts
+``` 
+
+::: {#refs}
+:::

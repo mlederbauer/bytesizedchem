@@ -1,0 +1,9 @@
+---
+title: "Post With Code"
+date: "2024-03-15"
+categories: [design, inkscape]
+image: "image.jpg"
+draft: true
+---
+
+This is a post with executable code.
