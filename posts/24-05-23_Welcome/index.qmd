@@ -6,7 +6,7 @@ categories: []
 
 :::{.callout-warning}
 
-This blog is a continuous work in progress. Subscribe [here]() to get updates.
+This blog is a continuous work in progress. Subscribe [here](https://bytesizedchem.substack.com/subscribe) to get updates.
 
 :::
 
@@ -32,7 +32,7 @@ I’m excited to share many ideas with you! Here, I aim to share ideas, findings
 * ChatGPT goes Chemistry: Build your own Large Language Model Agent
 * Networking for Nerds
 
-This website contains detailed content, context, and code snippets. For short summaries and – most importantly – for staying updated about upcoming posts, check out my [Substacl](). You will be notified by updates right here, making it super easy to stay informed by subscribing.
+This website contains detailed content, context, and code snippets. For short summaries and – most importantly – for staying updated about upcoming posts, check out my [Substack](https://bytesizedchem.substack.com/subscribe). You will be notified by updates right here, making it super easy to stay informed by subscribing.
 
 If you have any ideas or content that you would like to have featured or discussed here, please don't hesitate to reach out on [X](twitter.com/maglederb), [LinkedIn](linkedin.com/in/magdalena-lederbauer) or [email](mlederbauer@ethz.ch). Any feedback or redistribution is highly appreciated!
 
