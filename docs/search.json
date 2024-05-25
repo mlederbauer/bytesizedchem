@@ -7,20 +7,6 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/24-05-23_Welcome/index.html",
-    "href": "posts/24-05-23_Welcome/index.html",
-    "title": "Welcome To BSC!",
-    "section": "",
-    "text": "Tip\n\n\n\nSubscribe here to get updates.\n\n\n My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.\n\nWelcome to BytzeSizedChem!\nFinally – It has been a hot minute.\nHello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important for this blog’s acronym). I started BytzeSizedChem (BSC) with the goal of:\n\nPracticing a habit of consistent writing (it’s a muscle!),\nTransitioning from “student” to “researcher” while remaining a life-long learner,\nBuilding an atlas and community for digital chemists.\n\nI’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.\n\nSome upcoming posts include:\n\nCoding Essentials for New Digital Chemists\nMaking of a Scientific Poster\nAI is IN: Chemical Education with Digital Tools\nChatGPT goes Chemistry: Build your own Large Language Model Agent\nNetworking for Nerds\n\nThis website contains detailed content, context, and code snippets. For short summaries and – most importantly – for staying updated about upcoming posts, check out my Substack. You will be notified by updates right here, making it super easy to stay informed by subscribing.\nIf you have any ideas or content that you would like to have featured or discussed here, please don’t hesitate to reach out on X, LinkedIn or email. Any feedback or redistribution is highly appreciated!\nVery much looking forward to this journey with you! Ad astra 🚀✨"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "bytesizedchem",
-    "section": "",
-    "text": "Every Voice Counts: Digital Chemistry and Chemical Education\n\n\nA comment on chemical education and digital chemistry, part of a collective voices article published later this year.\n\n\n\ncomment\n\n\neducation\n\n\n\n\n\n\n\n\n\nMay 24, 2024\n\n\nMagdalena Lederbauer\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To BSC!\n\n\nByteSizedChem is my passion project with the goal of sharing, teaching and discussing (mostly) digital chemistry and student life.\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\nMagdalena Lederbauer\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/24-05-24_DigChemEd/index.html",
     "href": "posts/24-05-24_DigChemEd/index.html",
     "title": "Every Voice Counts: Digital Chemistry and Chemical Education",
@@ -42,11 +28,11 @@
     "text": "Augmenting Chemistry with Digital Tools\nDigital Chemistry is a young field that combines Computational Chemistry, Cheminformatics, Software Engineering and AI to accelerate the discovery of materials, apply machine learning methods to chemical problems and build actionable tools for researchers. As traditional chemistry emphasizes important hands-on synthetic and analytical methods, the recent digital shift requires strong skills in programming, navigating coding environments, data analysis, and developing reproducible machine learning pipelines. Critically assessing published works for reproducibility is essential, reflecting a broader trend of increasing retractions in scientific publishing (2).1"
   },
   {
-    "objectID": "posts/24-05-24_DigChemEd/index.html#so-what",
-    "href": "posts/24-05-24_DigChemEd/index.html#so-what",
+    "objectID": "posts/24-05-24_DigChemEd/index.html#the-practical-implications",
+    "href": "posts/24-05-24_DigChemEd/index.html#the-practical-implications",
     "title": "Every Voice Counts: Digital Chemistry and Chemical Education",
-    "section": "So what?",
-    "text": "So what?\nSimilar to wet-lab chemistry, expertise in programming grows with experience. Hands-on projects – whether for course projects or your own research – are the key to effectivly and sustainably learn. Building a machine learning pipeline is akin to creating and executing a synthesis procedure. Visualization . With the goal … . Mentorship: normalize support and openness . Computer-scientists-turned-chemists have the unique “view on both ends”. Community, destigmatizing. The goal is to make the best use of data, algorithms and our own chemical ideas. Digital tools are for everyone. Expertise in programming, similar to wet-lab skills, develops through hands-on experience. Engaging in projects, from coursework to independent research, is vital for learning effectively. Building a machine learning pipeline, for example, is comparable to executing a synthesis procedure. This approach, supported by a culture of mentorship and community engagement, aims to maximize the benefits of data and digital tools in chemistry. Emphasizing Coding in Chemistry Education\nLearning to program is as crucial as mastering traditional chemistry techniques. Through hands-on projects, chemists can gain practical experience in building and maintaining code, enhancing their proficiency in digital tools. Mentorship programs and community support play vital roles in fostering a conducive learning environment.\n\nIn order to facilitate transitioning to Digital Chemistry, we have created a community-curated list of learning resources. It is available on GitHub under mlederbauer/awesome-learning-digital-chemistry (no signup or installation required). It is a growing resource and we welcome everyone to contribute to it. In response to these needs, we have curated a comprehensive list of digital chemistry learning resources available on GitHub at mlederbauer/awesome-learning-digital-chemistry, promoting open contribution and accessibility to all interested parties.\n\n\n1. Blaiszik, B. blaiszik/ml_publication_charts: AI/ML Publication Statistics for 2022, 2023. doi:10.5281/zenodo.7713954."
+    "section": "The Practical Implications",
+    "text": "The Practical Implications\nSimilar to wet-lab chemistry, expertise in programming grows with experience. Effective learning in this domain is achieved through hands-on projects, from academic coursework over research to personal mini-projects. Building a machine learning pipeline, for example, mirrors the process of planning and conducting a chemical synthesis.\nThe community is encouraged to embrace mentorship and foster an environment of support and openness. As chemists increasingly transition to computer science, they bring a dual perspective that enriches our approach to both fields. Our collective goal is to maximize the utility of data and algorithms, integrating them seamlessly with established chemical knowledge.\n\nIn response to these needs, we have curated a comprehensive list of digital chemistry learning resources available on GitHub at mlederbauer/awesome-learning-digital-chemistry, promoting open contribution and accessibility to all interested parties.\n\n\n1. Blaiszik, B. blaiszik/ml_publication_charts: AI/ML Publication Statistics for 2022, 2023. doi:10.5281/zenodo.7713954.\n\n\n2. Van Noorden, R. More than 10,000 research papers were retracted in 2023 - a new record. Nature 2023, 624(7992), 479–481."
   },
   {
     "objectID": "posts/24-05-24_DigChemEd/index.html#footnotes",
@@ -56,10 +42,17 @@
     "text": "Footnotes\n\n\nSimilar to the previous 10’000 papers being published in chemistry and ML each year, more than 10’000 papers were retracted in 2023 alone.↩︎"
   },
   {
-    "objectID": "posts/24-05-24_DigChemEd/index.html#the-practical-implications",
-    "href": "posts/24-05-24_DigChemEd/index.html#the-practical-implications",
-    "title": "Every Voice Counts: Digital Chemistry and Chemical Education",
-    "section": "The Practical Implications",
-    "text": "The Practical Implications\nSimilar to wet-lab chemistry, expertise in programming grows with experience. Effective learning in this domain is achieved through hands-on projects, from academic coursework over research to personal mini-projects. Building a machine learning pipeline, for example, mirrors the process of planning and conducting a chemical synthesis.\nThe community is encouraged to embrace mentorship and foster an environment of support and openness. As chemists increasingly transition to computer science, they bring a dual perspective that enriches our approach to both fields. Our collective goal is to maximize the utility of data and algorithms, integrating them seamlessly with established chemical knowledge.\n\nIn response to these needs, we have curated a comprehensive list of digital chemistry learning resources available on GitHub at mlederbauer/awesome-learning-digital-chemistry, promoting open contribution and accessibility to all interested parties.\n\n\n1. Blaiszik, B. blaiszik/ml_publication_charts: AI/ML Publication Statistics for 2022, 2023. doi:10.5281/zenodo.7713954.\n\n\n2. Van Noorden, R. More than 10,000 research papers were retracted in 2023 - a new record. Nature 2023, 624(7992), 479–481."
+    "objectID": "posts/24-05-23_Welcome/index.html",
+    "href": "posts/24-05-23_Welcome/index.html",
+    "title": "Welcome To BSC!",
+    "section": "",
+    "text": "Tip\n\n\n\nSubscribe here to get updates.\n\n\n My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.\n\nWelcome to BytzeSizedChem!\nFinally – It has been a hot minute.\nHello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important for this blog’s acronym). I started BytzeSizedChem (BSC) with the goal of:\n\nPracticing a habit of consistent writing (it’s a muscle!),\nTransitioning from “student” to “researcher” while remaining a life-long learner,\nBuilding an atlas and community for digital chemists.\n\nI’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.\n\nSome upcoming posts include:\n\nCoding Essentials for New Digital Chemists\nMaking of a Scientific Poster\nAI is IN: Chemical Education with Digital Tools\nChatGPT goes Chemistry: Build your own Large Language Model Agent\nNetworking for Nerds\n\nThis website contains detailed content, context, and code snippets. For short summaries and – most importantly – for staying updated about upcoming posts, check out my Substack. You will be notified by updates right here, making it super easy to stay informed by subscribing.\nIf you have any ideas or content that you would like to have featured or discussed here, please don’t hesitate to reach out on X, LinkedIn or email. Any feedback or redistribution is highly appreciated!\nVery much looking forward to this journey with you! Ad astra 🚀✨"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "bytesizedchem",
+    "section": "",
+    "text": "Every Voice Counts: Digital Chemistry and Chemical Education\n\n\nA comment on chemical education and digital chemistry, part of a collective Voices article published later this year.\n\n\n\ncomment\n\n\neducation\n\n\n\n\n\n\n\n\n\nMay 25, 2024\n\n\nMagdalena Lederbauer\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To BSC!\n\n\nByteSizedChem is my passion project with the goal of sharing, teaching and discussing (mostly) digital chemistry and student life.\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\nMagdalena Lederbauer\n\n\n\n\n\n\nNo matching items"
   }
 ]
