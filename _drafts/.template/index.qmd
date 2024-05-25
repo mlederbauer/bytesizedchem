@@ -3,6 +3,8 @@ title: "Post With Code"
 date: "2024-02-19"
 categories: [news, code, analysis]
 image: "image.jpg"
+bibliography: references.bib
+csl: ../../elsevier-american-chemical-society.csl
 ---
 
 This is a post with executable code.

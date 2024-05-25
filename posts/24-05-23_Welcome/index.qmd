@@ -1,11 +1,9 @@
 ---
 title: "Welcome To BSC!"
+subtitle: "ByteSizedChem is my passion project with the goal of sharing, teaching and discussing (mostly) digital chemistry and student life."
 date: "2024-05-23"
 categories: []
 ---
-
-ByteSizedChem is my passion project with the goal of sharing, teaching and
-discussing (mostly) digital chemistry and student life.
 
 :::{.callout-tip}
 
