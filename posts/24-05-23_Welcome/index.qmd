@@ -5,11 +5,6 @@ date: "2024-05-23"
 categories: []
 ---
 
-:::{.callout-tip}
-
-Subscribe [here](https://bytesizedchem.substack.com/subscribe) to get updates.
-
-:::
 
 ![](thumbnail.png)
 *My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.*
@@ -25,6 +20,12 @@ Hello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important
 * Building an atlas and community for digital chemists.
 
 I’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.
+
+:::{.callout-tip}
+
+Subscribe [here](https://bytesizedchem.substack.com/subscribe) to get updates.
+
+:::
 
 ### Some upcoming posts include:
 

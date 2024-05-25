@@ -21,19 +21,6 @@
 
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to stay updated on coming posts.</p>
-</div>
-</div>
 <section id="a-flood-of-data" class="level2">
 <h2 class="anchored" data-anchor-id="a-flood-of-data">A flood of data</h2>
 <p>Each year, over 10’000 papers are published in the field of machine learning in chemistry, which equates to over 27 papers <em>per day</em> <span class="citation" data-cites="ben_blaiszik_2023_7713954"><em>(1)</em></span>. As of May 2024, GitHub hosts nearly <em>12’000</em> repositories featuring the term “chemistry”. New chemicals are discovered at a rapid pace, pushing the boundaries of traditional laboratory practices through automation. As the field evolves, chemists need to handle large amounts of heterogeneous data.</p>
@@ -48,6 +35,19 @@ Tip
 <p>The community is encouraged to embrace mentorship and foster an environment of support and openness. As chemists increasingly transition to computer science, they bring a dual perspective that enriches our approach to both fields. Our collective goal is to maximize the utility of data and algorithms, integrating them seamlessly with established chemical knowledge.</p>
 <hr>
 <p>In response to these needs, we have curated a comprehensive list of digital chemistry learning resources available on GitHub at <a href="https://github.com/mlederbauer/awesome-learning-digital-chemistry">mlederbauer/awesome-learning-digital-chemistry</a>, promoting open contribution and accessibility to all interested parties.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to stay updated on coming posts.</p>
+</div>
+</div>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0">
 <div id="ref-ben_blaiszik_2023_7713954" class="csl-entry">
 1. Blaiszik, B. <span class="nocase">blaiszik/ml_publication_charts: AI/ML Publication Statistics for 2022</span>, 2023. doi:<a href="https://doi.org/10.5281/zenodo.7713954">10.5281/zenodo.7713954</a>.
@@ -83,6 +83,17 @@ Tip
 
 
 
+<p><img src="https://bytesizedchem.com/posts/24-05-23_Welcome/thumbnail.png" class="img-fluid"> <em>My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.</em></p>
+<section id="welcome-to-bytzesizedchem" class="level1">
+<h1>Welcome to BytzeSizedChem!</h1>
+<p>Finally – It has been a hot minute.</p>
+<p>Hello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important for this blog’s acronym). I started BytzeSizedChem (BSC) with the goal of:</p>
+<ul>
+<li>Practicing a habit of consistent writing (it’s a muscle!),</li>
+<li>Transitioning from “student” to “researcher” while remaining a life-long learner,</li>
+<li>Building an atlas and community for digital chemists.</li>
+</ul>
+<p>I’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -96,17 +107,6 @@ Tip
 <p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to get updates.</p>
 </div>
 </div>
-<p><img src="https://bytesizedchem.com/posts/24-05-23_Welcome/thumbnail.png" class="img-fluid"> <em>My two favorite colors and a drawing of me back when I was a full-on wetlab aficionada.</em></p>
-<section id="welcome-to-bytzesizedchem" class="level1">
-<h1>Welcome to BytzeSizedChem!</h1>
-<p>Finally – It has been a hot minute.</p>
-<p>Hello there! I’m Magdalena, holding a BSc ETH in Chemistry (which is important for this blog’s acronym). I started BytzeSizedChem (BSC) with the goal of:</p>
-<ul>
-<li>Practicing a habit of consistent writing (it’s a muscle!),</li>
-<li>Transitioning from “student” to “researcher” while remaining a life-long learner,</li>
-<li>Building an atlas and community for digital chemists.</li>
-</ul>
-<p>I’m excited to share many ideas with you! Here, I aim to share ideas, findings, and discussions in a safe and open space.</p>
 <section id="some-upcoming-posts-include" class="level3">
 <h3 class="anchored" data-anchor-id="some-upcoming-posts-include">Some upcoming posts include:</h3>
 <ul>

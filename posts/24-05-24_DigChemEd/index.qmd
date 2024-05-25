@@ -8,11 +8,6 @@ bibliography: references.bib
 csl: ../../elsevier-american-chemical-society.csl
 ---
 
-:::{.callout-tip}
-
-Subscribe [here](https://bytesizedchem.substack.com/subscribe) to stay updated on coming posts.
-
-:::
 
 ## A flood of data
 Each year, over 10'000 papers are published in the field of machine learning in chemistry, which equates to over 27 papers *per day* [@ben_blaiszik_2023_7713954]. As of May 2024, GitHub hosts nearly *12'000* repositories featuring the term "chemistry". New chemicals are discovered at a rapid pace, pushing the boundaries of traditional laboratory practices through automation. As the field evolves, chemists need to handle large amounts of heterogeneous data.
@@ -30,6 +25,11 @@ The community is encouraged to embrace mentorship and foster an environment of s
 
 In response to these needs, we have curated a comprehensive list of digital chemistry learning resources available on GitHub at [mlederbauer/awesome-learning-digital-chemistry](https://github.com/mlederbauer/awesome-learning-digital-chemistry), promoting open contribution and accessibility to all interested parties.
 
+:::{.callout-tip}
+
+Subscribe [here](https://bytesizedchem.substack.com/subscribe) to stay updated on coming posts.
+
+:::
 
 ::: {#refs}
 :::
