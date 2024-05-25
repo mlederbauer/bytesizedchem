@@ -6,7 +6,7 @@ website:
   title: "bytesizedchem"
   site-url: https://bytesizedchem.com
   description: "A Digital Chemistry Atlas"
-  favicon: assets/favicon.png
+  # favicon: assets/favicon.png
   navbar:
     right:
       - about.qmd
