@@ -10,42 +10,7 @@
 <atom:link href="https://bytesizedchem.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A Digital Chemistry Atlas</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Sat, 25 May 2024 22:00:00 GMT</lastBuildDate>
-<item>
-  <title>Ad Astra: Der Paradigmenwechsel der Digitalen Chemie</title>
-  <dc:creator>Magdalena Lederbauer</dc:creator>
-  <link>https://bytesizedchem.com/posts/24-05-26_Ad_Astra_Digitale_Chemie/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><em>The Anual “Thanks Giving” Event by the ETH Foundation is a major event in. I had the honor to be invited to the 2024 edition and share some of my current research.</em></p>
-<p>Herzlichen Dank – an dieser Stelle danke ich auch herzlich den Organisator:innen des heutigen Abends und allen Mitarbeitenden der ETH Foundation Es ist mir eine enorme Ehre und Freude, Ihnen heute mein Forschungsgebiet und meine Leidenschaft, die Digitale Chemie, näherzubringen!</p>
-<p>Wie bereits erwähnt, bin ich Chemikerin, die mittlerweile ein wenig in die Informatik gerutscht ist. Nun, Chemie – darunter stellt sich jeder und jede etwas Anderes vor! Was meine ich, wenn ich von der Chemie, und wie wir in weiterer Folge sehen werden, von der digitalen Chemie spreche?</p>
-<p>Ein Aspekt, der mich an der Schweiz als Land enorm fasziniert, ist ihre Mehrsprachigkeit. Darum starte ich mit einer Analogie: Scheidekunst. Das ist der niederländische Begriff für die Chemie. (HISTORIE RECHERCHIEREN) Die Kunst, Materialien zu trennen, zu scheiden. Beispielsweise, ganz aktuell, der Abbau von Plastikabfällen, Pestiziden, …</p>
-<p>Was kann die Chemie noch? Nun, Materialien zusammenführen, um neue Substanzen herzustellen. Reaktionen modellieren, um unseren Körper und unsere Umwelt zu verstehen.</p>
-<p>Aber: Wir haben Probleme mit Publikationsflut Seitdem der heutige Abend begonnen hat, wurden vier neue Paper in der … publiziert, wurden … neue Compounds entdeckt. Labor Automatisierung. Fest steht: in der Chemie muss man mit Unmengen an heterogenen Daten umgehen!</p>
-<p>LARGE LANGUAGE MODELS SACCrow, Bayesioan Optimization</p>
-<p>Daher, meine Vision für die nächsten Monate: …</p>
-<p>Was ich Ihnen mitgeben möchte: …</p>
-<p>In diesem Sinne bedanke ich mich ganz herzlich bei meinen Kollaborator:innen an der ETH Zürich, der EPFL sowie dem Massachusetts Insitute of Technology.</p>
-<p>Im Namen aller Stipendiat:innen des ESOP-Programms bedanke ich mich auch ganz herzlich für Ihre entscheidende finanzielle Unterstützung sowie das exzellente Netzwerk dieses Programms.</p>
-<p>Sei es</p>
-<p>Die spannendsten Entdeckungen entstehen an der Schnittstelle von Disziplinen, die eine andere Sprache sprechen</p>
-<div id="refs">
-
-</div>
-
-
-
- ]]></description>
-  <category>comment</category>
-  <guid>https://bytesizedchem.com/posts/24-05-26_Ad_Astra_Digitale_Chemie/</guid>
-  <pubDate>Sat, 25 May 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://bytesizedchem.com/posts/24-05-26_Ad_Astra_Digitale_Chemie/image.jpg" medium="image" type="image/jpeg"/>
-</item>
+<lastBuildDate>Fri, 24 May 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Every Voice Counts: Digital Chemistry and Chemical Education</title>
   <dc:creator>Magdalena Lederbauer</dc:creator>
@@ -107,33 +72,6 @@ Tip
   <guid>https://bytesizedchem.com/posts/24-05-24_DigChemEd/</guid>
   <pubDate>Fri, 24 May 2024 22:00:00 GMT</pubDate>
   <media:content url="https://bytesizedchem.com/posts/24-05-24_DigChemEd/thumbnail.png" medium="image" type="image/png" height="104" width="144"/>
-</item>
-<item>
-  <title>Getting a taste of the crème de la crème of science</title>
-  <dc:creator>Magdalena Lederbauer</dc:creator>
-  <link>https://bytesizedchem.com/posts/24-05-31_First-conference/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Last month, I took part in my first international conference on quantum machine learning in chemistry in Germany. I learnt a lot and would love to … .</p>
-<p>dived into the unique world of academic conferences.</p>
-<p>set challenging goals</p>
-<section id="aftermath" class="level2">
-<h2 class="anchored" data-anchor-id="aftermath">Aftermath</h2>
-<p>I had to leave the conference a few hours early to go from Germany to Austria. Three hours into my #adventurousDeutscheBahnJourney (if you know you know), I received a slack message from a colleague. I just won the first poster prize!</p>
-<p>This shows you that … . It is about enjoying the process, soaking up the atmosphere.</p>
-
-
-</section>
-
- ]]></description>
-  <category>student-life</category>
-  <guid>https://bytesizedchem.com/posts/24-05-31_First-conference/</guid>
-  <pubDate>Thu, 23 May 2024 22:00:00 GMT</pubDate>
-  <media:content url="https://bytesizedchem.com/posts/24-05-31_First-conference/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Welcome To BSC!</title>
