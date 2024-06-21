@@ -10,14 +10,14 @@ website:
   navbar:
     right:
       - about.qmd
+      - text: "Subscribe"
+        href: https://bytesizedchem.substack.com/subscribe
       - icon: github
         href: https://github.com/mlederbauer
       - icon: twitter
         href: https://twitter.com/maglederb
       - icon: linkedin
         href: https://www.linkedin.com/in/magdalena-lederbauer/
-      - icon: rss
-        href: index.xml
     logo: assets/favicon.png
   # margin-header: subscribe.html
 format:
