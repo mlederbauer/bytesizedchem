@@ -3,7 +3,7 @@ title: "Ad Astra"
 subtitle: "Der Paradigmenwechsel der Digitalen Chemie"
 date: "2024-06-21"
 categories: [comment]
-image: "images/ETH_ThanksGiving24_75"
+image: "images/ETH_ThanksGiving24_75.jpeg"
 ---
 
 *An der jährlichen "Thanks Giving"-Veranstaltung der ETH Foundation präsentieren junge Forschende und Entrepreneurs ihre Arbeit vor den Donatoren. Ich hatte die Ehre, zur 2024 Edition eingeladen zu werden und einen Teil meiner aktuellen Forschung vorzustellen. Eine Abschrift meines Vortrags.*

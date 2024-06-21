@@ -3,7 +3,7 @@ title: "Ad Astra"
 subtitle: "The Paradigm Shift of Digital Chemistry"
 date: "2024-06-21"
 categories: [comment]
-image: "images/ETH_ThanksGiving24_75"
+image: "images/ETH_ThanksGiving24_75.jpeg"
 ---
 
 *The Annual "Thanks Giving" Event by the ETH Foundation features young researchers and entrepreneurs who present their work in front of the donors. I had the honor to be invited to the 2024 edition and share some of my current research. A transcript of my talk.*
