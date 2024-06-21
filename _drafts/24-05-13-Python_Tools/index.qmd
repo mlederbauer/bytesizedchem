@@ -9,8 +9,10 @@ bibliography: references.bib
 
 ---
 
-# Intro Story
-In school, I never touched more than necessary on a computer.
+In school, I never touched more than necessary on a computer. Powerpoint, Excel, Word, perhaps even ... . Those who sed LaTeX are a Guru. 
+I often see the types of videos around "How I Learnt To Code" and "How I would Do It Differently If I Started in 2024". Generally, there are always ways to do something better
+
+I see this more as a collection of ressources for someone in the natural sciences to 
 
 # How to set up a coding project
 - 

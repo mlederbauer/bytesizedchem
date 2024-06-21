@@ -10,7 +10,66 @@
 <atom:link href="https://bytesizedchem.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A Digital Chemistry Atlas</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Fri, 24 May 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 20 Jun 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Ad Astra</title>
+  <dc:creator>Magdalena Lederbauer</dc:creator>
+  <link>https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>The Annual “Thanks Giving” Event by the ETH Foundation features young researchers and entrepreneurs who present their work in front of the donors. I had the honor to be invited to the 2024 edition and share some of my current research. A transcript of my talk.</em></p>
+<p>Good evening, ladies and gentlemen. It is a great pleasure for me to share some of my <strong>research and passion</strong>, digital chemistry, with you today.</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide1.png" class="img-fluid"> <em>Matterhorn bei Nacht. Bild von <a href="https://unsplash.com/@explorewithjoshua?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Explore with Joshua</a> auf <a href="https://unsplash.com/photos/snow-covered-mountain-under-blue-sky-during-night-time-4yBogrmcEmM?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a>.</em></p>
+<p>Chemistry as we know it is an incredibly vast field that reaches into <strong>every area of our lives</strong>. We’re talking everything from the development of new medicines and renewable energy to materials for electronics, which allows me to project this presentation in front of you. There is also an enormous number of possible materials and molecules that we can produce: Imagine that the universe of chemistry is as vast as the night sky above us. There are many more stars than we could ever count!</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide7.png" class="img-fluid"></p>
+<p>There are an estimated 10^60 small organic molecules that we could theoretically make. That’s a <strong>1 with 60 zeros</strong>. That’s as many molecules as there are grains of sand on Earth… multiplied by the number of planets in the known universe. However, we have only discovered or produced a tiny fraction of these immeasurable possibilities!</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide2.png" class="img-fluid"></p>
+<p>In view of the current global challenges that <strong>chemistry plays a central role</strong> in solving, we need to find a way to <strong>locate the most promising galaxies and stars</strong> in order to find the most active catalyst or the best chemical process - and that requires digital chemistry!</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide3.png" class="img-fluid"></p>
+<p>Traditional chemistry as we know it is often tedious and resource-intensive. Researchers have an <strong>idea</strong>, formulate a <strong>hypothesis</strong> that is tested with an <strong>experimental setup</strong>, a <strong>result</strong> is obtained and the <strong>data</strong> is extracted. Very often, assumptions are made based on chemical intuition, hypotheses are refined and the loop is started again. And that has got us very far so far! However, it has also turned out that this is not the most efficient way to make optimal use of the collected data…</p>
+<p>This is where digital chemistry comes into play - based on the <strong>developments in algorithms, models and increased computing power</strong>, it uses machine learning, among other things, to quickly and efficiently gain new insights and solve chemical problems from an “ocean” of data from the lab &amp; literature.</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide4.png" class="img-fluid"></p>
+<p>One way of using this artificial intelligence is <strong>language models</strong>, also known as large language models. They have become particularly well known through models such as ChatGPT, which have attracted global attention in the last year and a half. These models are not only finding their way into chats, but also into the natural sciences and engineering.</p>
+<p><strong>Chemistry can be understood as a language</strong>! In the broadest sense, language models process and generate text, for example in the translation of texts, as shown above from French into German (<em>slides all in German, sorry!</em>). In chemistry, here translated into molecules, language models can be trained to translate the starting materials into products, to predict the reaction products.</p>
+<p>An <strong>atom</strong> is like a <strong>letter</strong>, a <strong>molecule</strong> like a <strong>word</strong>, and a <strong>reaction</strong> like a whole <strong>sentence</strong>. The input are the starting materials, or the request, of a user, the output are the products. These models have been trained on a gigantic corpus of text and chemical data, allowing us to extrapolate to new data and <strong>find new molecules</strong>.</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide5.png" class="img-fluid"></p>
+<p>In my current research, I am also working on the <strong>use of language models for the development of catalysts for the fixation of carbon dioxide</strong>, i.e.&nbsp;CO2. With the help of efficient catalysts, we could convert CO2 from our air into valuable chemicals that we need for our everyday lives and fuels; something that is essential for creating a circular economy.</p>
+<p>There exists a class of <strong>atomic catalysts</strong> (<em>single atom catalysts</em>) that consists of sophisticated combinations of metals, support materials and ligands. Discovering new such catalysts is a combinatorial challenge! This is why we use Digital Chemistry.</p>
+<p>We take advantage of the fact that extensive data has already been collected over several decades in the form of <strong>scientific publications</strong>. Using a language model, we sift through several thousand of them - more than a human could ever read - and extract information.</p>
+<p>In this case, our input (<em>see loop above</em>) is the request to produce a catalyst with (<strong>certain properties</strong>). For example, we want to use cheaper and more abundant metals, a specific carrier material or reaction conditions that are as mild as possible. In addition, the model is fed with a huge body of literature. The output is a recipe (<em>synthesis procedure</em>) for the production of such a catalyst.</p>
+<p>We give this recipe to experimental collaborators at ETH Zurich, who carry out the experiment and provide us with data to feed the language model. We use <strong>optimization algorithms</strong> to find the next best catalyst, thereby minimizing the number of necessary steps and iteratively increasing the efficiency of the process.</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/Slide6.png" class="img-fluid"></p>
+<p>A central, if not the biggest challenge of our research is the evaluation of the models for <strong>reliability</strong> and their <strong>generalizability to unknown problems</strong>. Anyone who has used ChatGPT knows that a language model always gives an answer that sounds convincing. The question is, how much can we trust this output? Can these models be <strong>reliable scientific tools</strong>? How can we be sure that the suggestions are not only theoretically but also practically useful? To address this aspect, I am currently working on a <strong>gold standard</strong> (<em>benchmark</em>), a dataset that will be used to identify the weaknesses of these language models. It is crucial to recognize the potential but also the risks of these technologies and to handle them responsibly.</p>
+<p>I have given you a small insight into my research, which is emblematic of how digital chemistry can be used to optimize development processes. It has the potential to purposefully <strong>explore this gigantic universe of chemicals</strong>! This is important in order to discover cost-effective and sustainable materials. The field stands for a <strong>synergy of disciplines</strong>, between expert knowledge, algorithms and data.</p>
+<p>I look forward to continuing this enriching work and thank my collaborators and you for supporting me with the ESOP Excellence Scholarship. With this in mind: <strong>Ad Astra</strong>!</p>
+<p><img src="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/ETH_ThanksGiving24_75.jpeg" class="img-fluid"></p>
+<p><em>Photo Credits to ETH Foundation / Alessandro Della Bella. Special thanks to all my collaborators inside and outside ETH Zurich: Kjell Jorner (ETHZ), Stefan Schmid (ETHZ), Vignesh Somnath (ETHZ), Antonio Togni (ETHZ), Zachariah J. Berkson (University of Arizona), Christophe Copéret (ETHZ), Benedikt Winter (ETHZ), André Bardow (ETHZ), Manu Suvarna (ETHZ), Javier Pérez-Ramírez (ETHZ), Andres M Bran (EPFL), Geemi Wellawatte (EPFL), Anna Borisova (EPFL), Bojana Rankovic (EPFL), Philippe Schwaller (EPFL).</em></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to stay updated on coming posts.</p>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>comment</category>
+  <guid>https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/</guid>
+  <pubDate>Thu, 20 Jun 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://bytesizedchem.com/posts/24-06-21_Ad_Astra_Digital_Chemistry/images/ETH_ThanksGiving24_75" medium="image"/>
+</item>
 <item>
   <title>Every Voice Counts: Digital Chemistry and Chemical Education</title>
   <dc:creator>Magdalena Lederbauer</dc:creator>
