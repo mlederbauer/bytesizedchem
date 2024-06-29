@@ -1,0 +1,70 @@
+---
+title: "Learnings from My First International Conference"
+subtitle: "Getting a taste of the crème de la crème of science"
+date: "2024-06-29"
+categories: [student-life]
+image: "images/ccsc.jpg"
+bibliography: references.bib
+csl: ../../elsevier-american-chemical-society.csl
+---
+
+*Exactly one month ago, I attended my very first international conference. What I learnt: Embrace to network, set specific goals, the art of following up. A regard-en-arrière.*
+
+***“ByteSizedChemistry”*** was born during some conversations over cocktails and the skyline of Heidelberg. I spoke with colleagues, and we encouraged each other to share our passion for chemistry with the public through a blog and YouTube channel—some of whom are now some of the first subscribers of the blog—hi!
+
+
+I printed and packed my poster, caught the train, and arrived in Heidelberg eight hours later filled with expectations and curiosity (and a bit of uncertainty). Four days later I can say: **I am now fully convinced that next to collaborating with others and the pleasure of finding things out** (Feynman reference intended)**, scientific conferences are the crème de la crème of “academic life”**. And why you should definitely – even as a young undergraduate or graduate student – consider them indispensable.
+
+![](images/ccsc.jpg)
+*A small snippet of chemical compound space: The attendees’ favorite molecules. I contributed N-methylimidazole and beta-carotene 🥕. Some transition metal complexe made it in there, too – over 10^60 (!) more to explore!*
+
+
+## Why Conferences?
+
+Next to the “academic” lab”, as we know it, there are several occasions and situations where the progression of science occurs. Workshops, Hackathons, Project presentations of lectures, coffee rooms (largely underestimated!). Conferences are an amazing occasion to meet people outside of your research group, university or thematic bubble. You have the possibility to be sent by a group, but also join one yourself (*I have a note on that at the end of the article, see here [1]*).
+
+When I saw an advertisment for taking part in the Chemical Compound Space Conference (CCSC) 2024, focusing on Quantum Machine Learning and discovering new molecules and materials on a large scale, I was instantly “hooked” and eager to be part of it.
+
+![](images/locals.jpeg)
+*Conferences are also the perfect occasion to try out cuisines and local cafés. CCSC also provided us with fantastic refreshing beverages.*
+
+## Your Studies Are Useful 🤯
+
+I am currently in the stage between “finishing the last lectures and exams” of my master’s and “executing the first real research projects” – from start to finish, half-time or full-time for a few months, where the answer is not known
+
+I took the course Quantum Chemistry this semester, introducing and deepening concepts in first-principle methods and Density Functional Theory (DFT); methods that I’ve used, and now understand closer. Terms like *CCSD(T), GIAO, def2, ZORA, …* now make sense to me. Some aspects, such as niche-sque name reactions or notations for defects in crystal systems, might fade over time, concepts stay. (It is great to be a chemist who always “speaks in” concepts and models.)
+
+Similarly, reactions of catalytic interest (organometallics, zeolites, biochemistry) are familiar to me, and it is FUN to “rediscover” them in “real life”! – Much better than Anki suggesting it to you through its algorithm for the tenth time.
+
+## Embrace ✨Networking✨
+Even though I stressed the importance of listening to talks and contributions in the last point, some people told me that *networking* holds the true value of scientific conferences. I can highly recommend to take a look at “Networking for Nerds”, a book highlighting how you can benefit from longlasting professional connections. It is freely accessible for university students and shares AMAZINGLY VALUABLE lessons. I’ve been re-reading it recently. Networking is an essential part of being a scientist, it can be fun and immensely valuable. Check it out [here](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118663653) (also available on Amazon [here](https://www.amazon.com/Networking-Nerds-Game-Changing-Opportunities-Everywhere/dp/1118663586)).
+
+![](images/schedule.jpg)
+*A packed schedule – nonetheless plenty of coffee and lunch breaks to get to know the other attendees – who are much more similar to you than you think!*
+
+## How To Build An Award-Winning Poster 🌁
+
+The creation of a scientific poster can be divisive: some love it, others dread it. However, never underestimate the impact a well-crafted poster (and presentation) can have. My own poster session led to enriching conversations and, excitingly, the first poster prize! This recognition was not just an honor, but a testament to the potential impact of even 'small' master's projects.
+
+I took inspiration from many awesome resources on the internet, among others [How To Design an Award Winning Conference Poster](https://www.animateyour.science/post/how-to-design-an-award-winning-conference-poster).
+
+Creating your poster is a creative process that hones your graphic design, public speaking (and time managment – printer shops are closed on Sunday!) skills. [Inkscape]() is my favorite platform for designing graphics, PowerPoint for creating them. *I will write more about this in an upcoming post, WIP*
+
+## Set Yourself Up For A Challenge: The Power of Following Up 🖋️
+
+Following up post-conference is as crucial as the interactions during the event. Whether it’s applying a new calculation method discussed or revisiting a suggestion from a fellow attendee, these efforts solidify connections and can lead to future collaborations. Don’t hesitate to reach out post-conference; a simple message can open doors to new opportunities (and friendships). LinkedIn is your friend.
+
+This is challenging, as the semester always is busy and the task list long (this is also an immense issue for hackathon projects, by the way — *I will write more about this in an upcoming post, WIP*).
+
+## I’m An Undergraduate or Master Student So Where Do I Start? 🐣
+
+[1] If you ticked “None yet” in the first poll, this paragraph is for you!
+
+If you're considering attending your first conference and haven't yet done so, start by exploring local or national meetings related to your field. My academic upbringing took place in Switzerland, which is a small, innovative, very interconnected country. There, for example, the Swiss Chemical Society Fall Meeting provides an accessible platform for young chemists to engage with the community. Membership often includes discounted conference fees, making it a cost-effective way to expand your network (the membership fee is 50 CHF per year for students – so is the entry fee for the single conference). If you sign up straightaway, you could benefit from other activities of the society, such as company visits or smaller schools. National and international {chemist/scientist} societies are amazing for building your aforementioned network.
+
+Find out more about conferences in the form of a regularly updated conference database [here](https://supersciencegrl.co.uk/conferences).
+
+![](images/banner.jpg)
+*Banner of the 2023 SCS Fall Meeting in Bern. This year, it takes place in Fribourg, Switzerland. Other national societies provide similar meetings (for young students as well!), too!*
+
+In summary, my learnings from the conference are clear: conferences are invaluable, though they can also be exhausting; never fear networking; and consider starting a science communication blog—because your field is fascinating! (And stick to posting regularly, as well.) **It is about enjoying the process, soaking up the atmosphere.** If you have any thoughts or experiences to share, please leave them in the comments or write us at BSC. Thanks for reading and sharing. ***See you at the next conference!***
