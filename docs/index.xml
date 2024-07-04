@@ -10,7 +10,822 @@
 <atom:link href="https://bytesizedchem.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A Digital Chemistry Atlas</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Fri, 28 Jun 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 18 Feb 2026 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Chem Bit #1: Sunburst Charts</title>
+  <dc:creator>Magdalena Lederbauer</dc:creator>
+  <link>https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to stay updated on coming posts.</p>
+</div>
+</div>
+<p>Imagine you’re curious about a dataset you created and curated. So much work! And now you get to present it in front of a crowd, or write it down in a report. How To Do?!</p>
+<p>Say: You have a list of catalyst supports and know that each plays a part in a “larger” class of reactions—like characters in a play. For example, graphene being a carbon support (or, a bunch of organic chemistry reactions that can broadly be catergorized into higher-level sections such as carbonyl chemistry, radical chemistry, … etc.). Conveniently, for example, you created a dictionary mapping a support to a cluster.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Your hand-(or machine-)made dictionary assigning each support to a cluster</span></span>
+<span id="cb1-2"></span>
+<span id="cb1-3">cluster_dictionary <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb1-4"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"alumina"</span>: [ <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"m-Al2O3"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"zeolite HZSM-5"</span>],</span>
+<span id="cb1-5"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"carbon"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"carbon nanofibers"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"mesoporous polymeric graphitic carbon nitride (mpg-C3N4)"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"nitrogen-doped graphene"</span>],</span>
+<span id="cb1-6"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ceria"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CeO2"</span>],</span>
+<span id="cb1-7"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"other"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Au"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fe2O3"</span>]</span>
+<span id="cb1-8">}</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Could also be something like</span></span>
+<span id="cb1-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># cluster_dictionary = {</span></span>
+<span id="cb1-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># "radical chemistry": ["hydrochlorination", "alpha-elimination"],</span></span>
+<span id="cb1-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># "carbonyl chemistry": ["transesterification", "carbonyl reduction"],</span></span>
+<span id="cb1-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># ... }</span></span></code></pre></div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Your example data</span></span>
+<span id="cb2-2">example_data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'m-Al2O3'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CeO2'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'nitrogen-doped graphene'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'nitrogen-doped graphene'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'m-Al2O3'</span>]</span></code></pre></div>
+<p>After some preprocessing, your data might look like this (see below for a data preprocessing tutorial):</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;&gt;&gt;</span> data_df</span>
+<span id="cb3-2">                      Item  Cluster  Count</span>
+<span id="cb3-3"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>                  m<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Al2O3  alumina      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span></span>
+<span id="cb3-4"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>                     CeO2    ceria      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-5"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>        carbon nanofibers   carbon      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span></span>
+<span id="cb3-6"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>  nitrogen<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>doped graphene   carbon      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span></span></code></pre></div>
+<p>How do you organize this “cast” of characters without overwhelming the viewer or crowding the plot? How do we visualize this – Perhaps with a histogram? Coloring each bar according to their cluster assignment?</p>
+<center>
+<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_histogram.png" class="img-fluid">
+</center>
+<p><em>Histogram of “my” data (larger than the example), corresponding to catalyst supports that belong to a specific super-cluster.</em></p>
+<p>That looks, ehh, ugly… let’s “prettify” this figure.</p>
+<p>We will use… a sunburst chart! It is a way of visualizing hierarchical data, or data belonging to multiple categories. Each “onion shell” of the plot corresponds to a specific category. In our case, the middle corresponds to the clusters, the bottom to the individual datapoints:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.express <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> px</span>
+<span id="cb4-2"></span>
+<span id="cb4-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create sunburst chart</span></span>
+<span id="cb4-4">fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> px.sunburst(</span>
+<span id="cb4-5">    data_df,</span>
+<span id="cb4-6">    path<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Item"</span>],</span>
+<span id="cb4-7">    values<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Count"</span>,</span>
+<span id="cb4-8">    title<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Catalyst Supports"</span>,</span>
+<span id="cb4-9">)</span>
+<span id="cb4-10"></span>
+<span id="cb4-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Save the figure</span></span>
+<span id="cb4-12">fig.write_image(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"my_first_sunburst.png"</span>)</span>
+<span id="cb4-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># You can also take a look instantly with fig.show()</span></span></code></pre></div>
+<center>
+<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_1.png" class="img-fluid">
+</center>
+<p><em>Your first sunburst chart. Woohoo! With the default layout, though.</em></p>
+<p>Nice, right? However, we’re kinda loosing track of the count of datapoints along the way. Let’s fix this by displaying it in the Cluster Label:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Include the number of data points right in the cluster label</span></span>
+<span id="cb5-2">cluster_counts <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df.groupby(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Count"</span>].<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>()</span>
+<span id="cb5-3">data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster_With_Counts"</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>].<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">map</span>(<span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">lambda</span> x: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>x<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> (</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>cluster_counts[x]<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)"</span>)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add to sunburst chart</span></span>
+<span id="cb5-6">fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> px.sunburst(</span>
+<span id="cb5-7">    ...</span>
+<span id="cb5-8">    path<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster_With_Counts"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Item"</span>],</span>
+<span id="cb5-9">    ...</span>
+<span id="cb5-10">)</span>
+<span id="cb5-11"></span>
+<span id="cb5-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Save the figure</span></span>
+<span id="cb5-13">fig.write_image(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"my_first_sunburst.png"</span>)</span></code></pre></div>
+<center>
+<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_2.png" class="img-fluid">
+</center>
+<p><em>Customization Step 1: Adding the counts</em></p>
+<p>Lastly, I like an aesthetic color scheme and LARGE text sizes, so let’s add that by modifying your favorite seaborn color palette (you can also assign individual colors, see documentation):</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define the number of unique clusters for our color palette</span></span>
+<span id="cb6-2">unique_clusters <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>].nunique()</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Palette from Seaborn to color each cluster</span></span>
+<span id="cb6-5"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> seaborn <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> sns</span>
+<span id="cb6-6">colors <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.color_palette(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"magma"</span>, unique_clusters)</span>
+<span id="cb6-7"></span>
+<span id="cb6-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Link our clusters to the Magma colors</span></span>
+<span id="cb6-9">color_map <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {cluster: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"rgb(</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(r<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">255</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">, </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(g<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">255</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">, </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(b<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">255</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)"</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> cluster, (r, g, b) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>].unique(), colors)}</span>
+<span id="cb6-10"></span>
+<span id="cb6-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add to sunburst chart</span></span>
+<span id="cb6-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add to sunburst chart</span></span>
+<span id="cb6-13">fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> px.sunburst(</span>
+<span id="cb6-14">    ...</span>
+<span id="cb6-15">    color_discrete_map<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>color_map,</span>
+<span id="cb6-16">    ...</span>
+<span id="cb6-17">)</span>
+<span id="cb6-18"></span>
+<span id="cb6-19"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Apply larger fontsize</span></span>
+<span id="cb6-20">fig.update_layout(font_size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>)</span>
+<span id="cb6-21"></span>
+<span id="cb6-22"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Save the figure</span></span>
+<span id="cb6-23">fig.write_image(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"my_first_sunburst.png"</span>)</span></code></pre></div>
+<center>
+<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_3.png" class="img-fluid">
+</center>
+<p><em>Customization Step 2: Custom color scheme</em></p>
+<p>Giving us this function (please use docstrings and typehints, folks!):</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> seaborn <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> sns</span>
+<span id="cb7-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb7-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.express <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> px</span>
+<span id="cb7-4"></span>
+<span id="cb7-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> create_sunburst_chart(data_df: pd.DataFrame, filename: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb7-6">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb7-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Generate a sunburst chart using a discrete Magma color scheme from Seaborn.</span></span>
+<span id="cb7-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    </span></span>
+<span id="cb7-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Args:</span></span>
+<span id="cb7-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        data_df (pd.DataFrame): DataFrame containing "Item", "Cluster", and "Count".</span></span>
+<span id="cb7-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    </span></span>
+<span id="cb7-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Returns:</span></span>
+<span id="cb7-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">        None, displays the chart.</span></span>
+<span id="cb7-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb7-15">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define the number of unique clusters</span></span>
+<span id="cb7-16">    unique_clusters <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>].nunique()</span>
+<span id="cb7-17"></span>
+<span id="cb7-18">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Get a list of colors from the Magma palette</span></span>
+<span id="cb7-19">    colors <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sns.color_palette(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"magma"</span>, unique_clusters)</span>
+<span id="cb7-20"></span>
+<span id="cb7-21">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create a color map linking clusters to colors</span></span>
+<span id="cb7-22">    color_map <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {cluster: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"rgb(</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(r<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">255</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">, </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(g<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">255</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">, </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(b<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">255</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)"</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> cluster, (r, g, b) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Cluster'</span>].unique(), colors)}</span>
+<span id="cb7-23"></span>
+<span id="cb7-24">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Aggregate count by cluster</span></span>
+<span id="cb7-25">    cluster_counts <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df.groupby(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Count"</span>].<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>()</span>
+<span id="cb7-26"></span>
+<span id="cb7-27">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Update cluster names in the DataFrame to include the count</span></span>
+<span id="cb7-28">    data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster_With_Counts"</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>].<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">map</span>(<span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">lambda</span> x: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>x<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> (</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>cluster_counts[x]<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">)"</span>)</span>
+<span id="cb7-29"></span>
+<span id="cb7-30"></span>
+<span id="cb7-31">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting with Plotly</span></span>
+<span id="cb7-32">    fig <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> px.sunburst(</span>
+<span id="cb7-33">        data_df,</span>
+<span id="cb7-34">        path<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster_With_Counts"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Item"</span>],</span>
+<span id="cb7-35">        values<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Count"</span>,</span>
+<span id="cb7-36">        title<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Catalyst Support Clustering"</span>,</span>
+<span id="cb7-37">        color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>,  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Can also be assigned according to 'Count' or another column; in that case set a continuous color_map</span></span>
+<span id="cb7-38">        color_discrete_map<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>color_map</span>
+<span id="cb7-39">    )</span>
+<span id="cb7-40">    fig.update_layout(font_size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>)</span>
+<span id="cb7-41">    fig.savefig(filename) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># can be png or svg</span></span></code></pre></div>
+Et voilà, you created your own sunburst chart that might help to visualize your hierarchical dataset better! Nice! The nice thing about using a small “dummy” dataset that corresponds to your use case is that you can nicely distinguish Used on my own data, we obtain something that looks like this:
+<center>
+<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" class="img-fluid">
+</center>
+<p>Looks better than the histogram before, right?</p>
+<center>
+<div style="display: flex; align-items: flex-start;">
+<p><img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_histogram.png" alt="Image 1" style="height: 300px; margin-right: 10px;"> <img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" alt="Image 2" style="height: 300px;"></p>
+</div>
+<em>Please say “yes”.</em>
+</center>
+<p>There are many ways to customize these charts further. For example, I can add “intermediate” clusters such as titanium oxide (TiO2), titanium nitride and titanium carbide, to segment the data further. We can also see at once that the carbon supports is highly represented in the dataset with 32 entries — whereas MoS2 or SiC only constitute 1 datapoint each. So, I probably know to be critical when my machine learning model exclusively predicts “carbon” in the majority of cases. Anyway!</p>
+<p>See here for further customization:</p>
+<ul>
+<li><a href="https://plotly.com/python/sunburst-charts/">Generating Sunburst Charts with Plotly</a></li>
+<li><a href="https://seaborn.pydata.org/tutorial/color_palettes.html">Color Palettes by Seaborn</a></li>
+<li><a href="https://inkscape.org/">Inkscape for visualizing and editing vector graphics</a></li>
+</ul>
+<p>Until the next time! 👋👋</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to stay updated on coming posts.</p>
+</div>
+</div>
+<details>
+<summary>
+P.S.: If your data is contained in a different format: data preprocessing… The least fun part.
+</summary>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Your hand-(or machine-)made dictionary assigning each support to a cluster</span></span>
+<span id="cb8-2">cluster_dictionary <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {</span>
+<span id="cb8-3"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"alumina"</span>: [ <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"m-Al2O3"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"zeolite HZSM-5"</span>],</span>
+<span id="cb8-4"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"carbon"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"carbon nanofibers"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"mesoporous polymeric graphitic carbon nitride (mpg-C3N4)"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"nitrogen-doped graphene"</span>],</span>
+<span id="cb8-5"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ceria"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CeO2"</span>],</span>
+<span id="cb8-6"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"other"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Au"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fe2O3"</span>]</span>
+<span id="cb8-7">}</span>
+<span id="cb8-8"></span>
+<span id="cb8-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Could also be something like</span></span>
+<span id="cb8-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># cluster_dictionary = {</span></span>
+<span id="cb8-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># "radical chemistry": ["hydrochlorination", "alpha-elimination"],</span></span>
+<span id="cb8-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># "carbonyl chemistry": ["transesterification", "carbonyl reduction"],</span></span>
+<span id="cb8-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># ... }</span></span></code></pre></div>
+<p>Say, our dataset contains all of the supports in the dataset, multiple times.</p>
+<div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;&gt;&gt;</span> example_data</span>
+<span id="cb9-2">[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'m-Al2O3'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CeO2'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'nitrogen-doped graphene'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'nitrogen-doped graphene'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'m-Al2O3'</span>]</span></code></pre></div>
+<p>Construct the dataframe with this code:</p>
+<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1">item_assigned_to_cluster <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {item: cluster <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> cluster, items <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> cluster_dictionary.items() <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> item <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> items}</span></code></pre></div>
+<div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;&gt;&gt;</span> item_assigned_to_cluster</span>
+<span id="cb11-2">{<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'m-Al2O3'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'alumina'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'zeolite HZSM-5'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'alumina'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon nanofibers'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'mesoporous polymeric graphitic carbon nitride (mpg-C3N4)'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'nitrogen-doped graphene'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'carbon'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CeO2'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ceria'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Au'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'other'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Fe2O3'</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'other'</span>}</span></code></pre></div>
+<div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create a DataFrame for plotting</span></span>
+<span id="cb12-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb12-3">data_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.DataFrame(</span>
+<span id="cb12-4">{<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Item"</span>: example_data, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Cluster"</span>: [item_assigned_to_cluster.get(item, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"other"</span>) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> item <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> example_data]}</span>
+<span id="cb12-5">)</span>
+<span id="cb12-6"></span>
+<span id="cb12-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate the frequency of each item</span></span>
+<span id="cb12-8">data_df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Count'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df.groupby(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Item'</span>)[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Item'</span>].transform(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'count'</span>)</span>
+<span id="cb12-9"></span>
+<span id="cb12-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Drop duplicates to avoid counting items multiple times</span></span>
+<span id="cb12-11">data_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> data_df.drop_duplicates(subset<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Item'</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1">Our dataframe now looks like this:</span>
+<span id="cb13-2"></span>
+<span id="cb13-3"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;&gt;&gt;</span> data_df</span>
+<span id="cb13-4">                      Item  Cluster  Count</span>
+<span id="cb13-5"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>                  m<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Al2O3  alumina      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span></span>
+<span id="cb13-6"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>                     CeO2    ceria      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb13-7"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>        carbon nanofibers   carbon      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span></span>
+<span id="cb13-8"><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>  nitrogen<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>doped graphene   carbon      <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span></span></code></pre></div>
+</details>
+
+
+
+ ]]></description>
+  <category>chem-bit</category>
+  <category>code</category>
+  <category>visualization</category>
+  <guid>https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/</guid>
+  <pubDate>Wed, 18 Feb 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" medium="image" type="image/png" height="141" width="144"/>
+</item>
 <item>
   <title>Learnings from My First International Conference</title>
   <dc:creator>Magdalena Lederbauer</dc:creator>
