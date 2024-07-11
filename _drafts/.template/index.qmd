@@ -1,8 +1,9 @@
 ---
 title: "Post With Code"
+subtitle: "Subtitle"
 date: "2026-02-19"
 categories: [news, code, analysis]
-image: "image.jpg"
+image: "images/image.jpg"
 bibliography: references.bib
 csl: ../../elsevier-american-chemical-society.csl
 ---
@@ -11,4 +12,7 @@ csl: ../../elsevier-american-chemical-society.csl
 
 Subscribe [here](https://bytesizedchem.substack.com/subscribe) to stay updated on coming posts.
 
+:::
+
+::: {#refs}
 :::

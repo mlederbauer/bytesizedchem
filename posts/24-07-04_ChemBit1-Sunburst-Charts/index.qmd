@@ -1,7 +1,7 @@
 ---
 title: "Chem Bit #1: Sunburst Charts"
 subtitle: "A Picture is Worth a Thousand Data Points: Visualize your dataset nicely with sunburst charts."
-date: "2026-02-19"
+date: "2024-07-04"
 categories: [chem-bit, code, visualization]
 image: "images/all_supports_sunburst.png"
 ---

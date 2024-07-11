@@ -10,11 +10,60 @@
 <atom:link href="https://bytesizedchem.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A Digital Chemistry Atlas</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Wed, 18 Feb 2026 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 10 Jul 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Chem Bit #2: A Shortcut That Saves You Loads Of Time</title>
+  <dc:creator>Magdalena Lederbauer</dc:creator>
+  <link>https://bytesizedchem.com/posts/24-07-11_ChemBit2-LaTeX-shortcut/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Hello there! I am writing a lot of reports, applications and text in LaTeX right now, and there is one tag that has caused me headache for the past years:</p>
+<pre><code>\ce{}</code></pre>
+<p>The chemical equation command by the usepackage <code>mhchem</code>. It is not math mode, making your text automatically be weirdly <em>tiltedandsquishedtogether</em>, it automatically recognizes ₛᵤb- and ˢᵘᵖᵉʳscript. It is everything for keeping me sane when describing molecules’ sum formulae and salts.</p>
+<p>The Problem?</p>
+<p>While I can mark text with my cursor and simply hit <code>Cmd+B</code> and make every text bold, while I can highlight, hit <code>$</code> and transform a line of math into math-mode like a breeze – is a pain to insert this <code>\ce{}</code> tag</p>
+<p>One day, I got too annoyed and searched for a shortcut for this. With success!!</p>
+<p>Let me introduce you to <a href="https://chromewebstore.google.com/detail/shortleaf/hmkemgnhfglmggklpfodjgkabaicchjn">Shortleaf</a>, a Google Chrome extension that lets you create your own Overleaf shortcuts. For literally anything.</p>
+<p>I found out about it in a reddit post (I can’t find anymore 🥲) and downloaded it from the <a href="https://chromewebstore.google.com/detail/shortleaf/hmkemgnhfglmggklpfodjgkabaicchjn">Google Chrome extension store</a>. <a href="https://github.com/andre-al/shortleaf">This is the repo</a> you can look at (or star, as the author – Andre Alcantara –, has done such a good job), and this is the custom command you can add*:</p>
+<p><img src="https://bytesizedchem.com/posts/24-07-11_ChemBit2-LaTeX-shortcut/images/shortcut.png" class="img-fluid"></p>
+<p>(Another useful command if you are using the LuaLaTeX compiler: ✨✨)</p>
+<p><img src="https://bytesizedchem.com/posts/24-07-11_ChemBit2-LaTeX-shortcut/images/sparkle.png" class="img-fluid"></p>
+<p>With Cmd+E, you can now insert at your free will, or mark any text to transform it into a beautiful ~sulfuric acid~ or ~isotopomer of ¹⁴C¹⁸O~. No hassle involved anymore. Needless to say, it only works on Overleaf at the moment.</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/new.mp4"></video></div>
+<p>I sincerely hope it is turning out as useful to you as it did for me. Please give Andre’s (<a href="https://x.com/andre_alc_"><span class="citation" data-cites="andre_alc_">@andre_alc_</span></a> on Twitter) repo a star or his post a ❤️ if you benefit from it. Supporters supporting supporters!</p>
+<p>Until next time 👋👋</p>
+<p>* Chrome Extensions → Shortleaf → Extension options → Commands</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Subscribe <a href="https://bytesizedchem.substack.com/subscribe">here</a> to stay updated on coming posts.</p>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>chem-bit</category>
+  <category>writing</category>
+  <guid>https://bytesizedchem.com/posts/24-07-11_ChemBit2-LaTeX-shortcut/</guid>
+  <pubDate>Wed, 10 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://bytesizedchem.com/posts/24-07-11_ChemBit2-LaTeX-shortcut/images/image.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Chem Bit #1: Sunburst Charts</title>
   <dc:creator>Magdalena Lederbauer</dc:creator>
-  <link>https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/</link>
+  <link>https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/</link>
   <description><![CDATA[ 
 
 
@@ -141,7 +190,7 @@ background-color: null;
 font-style: inherit;">2</span></span></code></pre></div>
 <p>How do you organize this “cast” of characters without overwhelming the viewer or crowding the plot? How do we visualize this – Perhaps with a histogram? Coloring each bar according to their cluster assignment?</p>
 <center>
-<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_histogram.png" class="img-fluid">
+<img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/all_supports_histogram.png" class="img-fluid">
 </center>
 <p><em>Histogram of “my” data (larger than the example), corresponding to catalyst supports that belong to a specific super-cluster.</em></p>
 <p>That looks, ehh, ugly… let’s “prettify” this figure.</p>
@@ -188,7 +237,7 @@ font-style: inherit;">"my_first_sunburst.png"</span>)</span>
 background-color: null;
 font-style: inherit;"># You can also take a look instantly with fig.show()</span></span></code></pre></div>
 <center>
-<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_1.png" class="img-fluid">
+<img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_1.png" class="img-fluid">
 </center>
 <p><em>Your first sunburst chart. Woohoo! With the default layout, though.</em></p>
 <p>Nice, right? However, we’re kinda loosing track of the count of datapoints along the way. Let’s fix this by displaying it in the Cluster Label:</p>
@@ -254,7 +303,7 @@ font-style: inherit;"># Save the figure</span></span>
 background-color: null;
 font-style: inherit;">"my_first_sunburst.png"</span>)</span></code></pre></div>
 <center>
-<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_2.png" class="img-fluid">
+<img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_2.png" class="img-fluid">
 </center>
 <p><em>Customization Step 1: Adding the counts</em></p>
 <p>Lastly, I like an aesthetic color scheme and LARGE text sizes, so let’s add that by modifying your favorite seaborn color palette (you can also assign individual colors, see documentation):</p>
@@ -366,7 +415,7 @@ font-style: inherit;"># Save the figure</span></span>
 background-color: null;
 font-style: inherit;">"my_first_sunburst.png"</span>)</span></code></pre></div>
 <center>
-<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_3.png" class="img-fluid">
+<img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/my_first_sunburst_3.png" class="img-fluid">
 </center>
 <p><em>Customization Step 2: Custom color scheme</em></p>
 <p>Giving us this function (please use docstrings and typehints, folks!):</p>
@@ -581,12 +630,12 @@ background-color: null;
 font-style: inherit;"># can be png or svg</span></span></code></pre></div>
 Et voilà, you created your own sunburst chart that might help to visualize your hierarchical dataset better! Nice! The nice thing about using a small “dummy” dataset that corresponds to your use case is that you can nicely distinguish Used on my own data, we obtain something that looks like this:
 <center>
-<img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" class="img-fluid">
+<img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" class="img-fluid">
 </center>
 <p>Looks better than the histogram before, right?</p>
 <center>
 <div style="display: flex; align-items: flex-start;">
-<p><img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_histogram.png" alt="Image 1" style="height: 300px; margin-right: 10px;"> <img src="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" alt="Image 2" style="height: 300px;"></p>
+<p><img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/all_supports_histogram.png" alt="Image 1" style="height: 300px; margin-right: 10px;"> <img src="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" alt="Image 2" style="height: 300px;"></p>
 </div>
 <em>Please say “yes”.</em>
 </center>
@@ -822,9 +871,9 @@ font-style: inherit;">2</span></span></code></pre></div>
   <category>chem-bit</category>
   <category>code</category>
   <category>visualization</category>
-  <guid>https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/</guid>
-  <pubDate>Wed, 18 Feb 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://bytesizedchem.com/posts/14-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" medium="image" type="image/png" height="141" width="144"/>
+  <guid>https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/</guid>
+  <pubDate>Wed, 03 Jul 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://bytesizedchem.com/posts/24-07-04_ChemBit1-Sunburst-Charts/images/all_supports_sunburst.png" medium="image" type="image/png" height="141" width="144"/>
 </item>
 <item>
   <title>Learnings from My First International Conference</title>
@@ -1060,7 +1109,6 @@ Tip
 </ol>
 </section></div> ]]></description>
   <category>comment</category>
-  <category>education</category>
   <guid>https://bytesizedchem.com/posts/24-05-24_DigChemEd/</guid>
   <pubDate>Fri, 24 May 2024 22:00:00 GMT</pubDate>
   <media:content url="https://bytesizedchem.com/posts/24-05-24_DigChemEd/thumbnail.png" medium="image" type="image/png" height="104" width="144"/>

@@ -1,0 +1,49 @@
+---
+title: "Chem Bit #2: A Shortcut That Saves You Loads Of Time"
+subtitle: "... if you are a chemist and work with LaTeX."
+date: "2024-07-11"
+categories: [chem-bit, writing]
+image: "images/image.png"
+---
+
+
+Hello there! I am writing a lot of reports, applications and text in LaTeX right now, and there is one tag that has caused me headache for the past years:
+
+```
+\ce{}
+```
+
+The chemical equation command by the usepackage `mhchem`. It is not math mode, making your text automatically be weirdly *tiltedandsquishedtogether*, it automatically recognizes ₛᵤb- and ˢᵘᵖᵉʳscript. It is everything for keeping me sane when describing molecules’ sum formulae and salts.
+
+The Problem?
+
+While I can mark text with my cursor and simply hit `Cmd+B` and make every text bold, while I can highlight, hit `$` and transform a line of math into math-mode like a breeze – is a pain to insert this `\ce{}` tag
+
+One day, I got too annoyed and searched for a shortcut for this. With success!!
+
+Let me introduce you to [Shortleaf](https://chromewebstore.google.com/detail/shortleaf/hmkemgnhfglmggklpfodjgkabaicchjn), a Google Chrome extension that lets you create your own Overleaf shortcuts. For literally anything.
+
+I found out about it in a reddit post (I can’t find anymore 🥲) and downloaded it from the [Google Chrome extension store](https://chromewebstore.google.com/detail/shortleaf/hmkemgnhfglmggklpfodjgkabaicchjn). [This is the repo](https://github.com/andre-al/shortleaf) you can look at (or star, as the author – Andre Alcantara –, has done such a good job), and this is the custom command you can add*:
+
+![](images/shortcut.png)
+
+(Another useful command if you are using the LuaLaTeX compiler: ✨✨)
+
+![](images/sparkle.png)
+
+With Cmd+E, you can now insert \ce{} at your free will, or mark any text to transform it into a beautiful ~sulfuric acid~ or ~isotopomer of ¹⁴C¹⁸O~. No hassle involved anymore. Needless to say, it only works on Overleaf at the moment.
+
+{{< video src="images/new.mp4" >}}
+
+I sincerely hope it is turning out as useful to you as it did for me. Please give Andre’s ([@andre_alc_](https://x.com/andre_alc_) on Twitter) repo a star or his post a ❤️ if you benefit from it. Supporters supporting supporters!
+
+
+Until next time 👋👋
+
+\* Chrome Extensions → Shortleaf → Extension options → Commands
+
+:::{.callout-tip}
+
+Subscribe [here](https://bytesizedchem.substack.com/subscribe) to stay updated on coming posts.
+
+:::

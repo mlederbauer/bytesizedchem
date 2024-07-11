@@ -2,7 +2,7 @@
 title: "Every Voice Counts: Digital Chemistry and Chemical Education"
 subtitle: "A comment on chemical education and digital chemistry, part of a collective *Voices* article published later this year."
 date: "2024-05-25"
-categories: [comment,education]
+categories: [comment]
 image: "thumbnail.png"
 bibliography: references.bib
 csl: ../../elsevier-american-chemical-society.csl
